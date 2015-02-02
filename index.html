@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="calculator.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>HTML Calculator</title>
 </head>
 <body>
   <div id="container">
     <div id="result_display">
-      <div id="operator_display"></div>
-      <div id="result_display_value"></div>
     </div>
     <div id="buttons_row_1" class="row">
       <div class="button">1</div>
@@ -30,9 +29,9 @@
       <div class="button">*</div>
     </div>
     <div id="buttons_row_4" class="row">
-      <div class="button">CLR</div>
+      <div class="button" id="clear_button">CLR</div>
       <div class="button">0</div>
-      <div class="button">ENT</div>
+      <div class="button" id="enter_button">ENT</div>
       <div class="button">/</div>
     </div>
   </div>
